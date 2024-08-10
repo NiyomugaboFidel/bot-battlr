@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  padding-inline: 5vw;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bot-collection, .your-bot-army {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Adjusted for better spacing */
+  justify-items: center;
+
+}
+
+.bot-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+   padding-left: 10px;
+   padding-right: 5px;
+ 
+}
+
+.bot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.bot-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bot-card-content {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.bot-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.bot-card p {
+  margin: 5px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.bot-card button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.bot-card button:hover {
+  background-color: #d62839;
+}
+
+.your-bot-army .bot-card button {
+  background-color: #f1faee;
+  color: #e63946;
+  border: 1px solid #e63946;
+}
+
+.your-bot-army .bot-card button:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.bot-specs {
+  text-align: center;
+}
+
+.sort-bar, .filter {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sort-bar button, .filter label {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.sort-bar button:hover, .filter label input:checked + span {
+  background: #d62839;
+}
+
+.filter label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
